@@ -1,3 +1,5 @@
+# NetworksExpansion [魔改版]
+
 ![](https://cdn.jsdelivr.net/gh/SlimefunGuguProject/Networks@master/images/logo/logo_large.png)
 
 [网络拓展](https://github.com/balugaq/NetworksExpansion)是一个[Slimefun](https://github.com/SlimefunGuguProject/Slimefun4)附属插件，基于[网络](https://github.com/SlimefunGuguProject/Networks)进行再开发以及 bug 修复，可以创建一个简单有效的物品存储与运输系统，并可以与货运系统交互。
@@ -24,3 +26,7 @@
 另外，感谢 **mc.talosmp.net** 的 **GentlemanCheesy** 成为[本人](https://github.com/Sefiraat)的首位赞助者！每个月能多喝一杯咖啡让我能有动力更好地编写插件。
 
 感谢 [m1919810 / matl114](https://github.com/m1919810) — 帮助[我](https://github.com/balugaq)找到了一些[网络拓展](https://github.com/balugaq/NetworksExpansion)的 bug
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=happy66dev/NetworksExpansion&type=Date)](https://star-history.com/#happy66dev/NetworksExpansion&Date)
