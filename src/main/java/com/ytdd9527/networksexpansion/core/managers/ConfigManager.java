@@ -59,10 +59,6 @@ public class ConfigManager {
         }
     }
 
-    public boolean isAutoUpdate() {
-        return Networks.getInstance().getConfig().getBoolean("auto-update", false);
-    }
-
     public boolean isDebug() {
         return Networks.getInstance().getConfig().getBoolean("debug", false);
     }
