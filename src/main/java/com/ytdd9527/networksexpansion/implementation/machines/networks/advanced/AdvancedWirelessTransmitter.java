@@ -106,8 +106,7 @@ public class AdvancedWirelessTransmitter extends AdvancedDirectional implements 
         return new Location(machine.getWorld(), Integer.parseInt(split[0]), Integer.parseInt(split[1]), Integer.parseInt(split[2]));
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

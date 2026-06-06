@@ -101,6 +101,8 @@ public class NetworkWirelessTransmitter extends NetworkObject {
                 }
             }
         });
+
+        onPostRegister();
     }
 
     private void onTick(@NotNull BlockMenu blockMenu) {
@@ -170,8 +172,7 @@ public class NetworkWirelessTransmitter extends NetworkObject {
         }
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

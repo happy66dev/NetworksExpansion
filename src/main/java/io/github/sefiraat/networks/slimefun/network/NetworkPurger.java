@@ -94,6 +94,8 @@ public class NetworkPurger extends NetworkObject {
                     blockMenu.dropItems(blockMenu.getLocation(), TEST_ITEM_SLOT);
                 }
             });
+
+        onPostRegister();
     }
 
     private void tryKillItem(@NotNull BlockMenu blockMenu) {
@@ -124,8 +126,7 @@ public class NetworkPurger extends NetworkObject {
         }
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

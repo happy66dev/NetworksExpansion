@@ -119,6 +119,8 @@ public abstract class NetworkDirectional extends NetworkObject {
                 }
             }
         });
+
+        onPostRegister();
     }
 
     @NotNull
@@ -286,8 +288,7 @@ public abstract class NetworkDirectional extends NetworkObject {
     protected void onUniqueTick() {
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

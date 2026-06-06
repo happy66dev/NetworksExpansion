@@ -188,8 +188,7 @@ public class AdvancedExport extends NetworkObject implements RecipeDisplayItem {
         root.addItemStack0(blockMenu.getLocation(), itemStack);
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

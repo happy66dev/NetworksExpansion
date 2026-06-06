@@ -68,8 +68,7 @@ public class ItemDifferenter extends NetworkObject {
         getSlotsToDrop().add(ITEM_2_SLOT);
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

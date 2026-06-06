@@ -438,8 +438,7 @@ public class DrawerManager extends NetworkObject {
         return list;
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         getPreset();
     }
 

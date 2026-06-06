@@ -39,6 +39,7 @@ public class NetworkRake extends LimitedUseItem {
         int amount) {
         super(itemGroup, item, recipeType, recipe);
         setMaxUseCount(amount);
+        onPostRegister();
     }
 
     @Override
@@ -84,8 +85,7 @@ public class NetworkRake extends LimitedUseItem {
         return key;
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         addWikiPage(WIKI_PAGE);
     }
 }

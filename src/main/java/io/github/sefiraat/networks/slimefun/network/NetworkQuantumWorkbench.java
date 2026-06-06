@@ -57,6 +57,7 @@ public class NetworkQuantumWorkbench extends SpecialSlimefunItem {
     public NetworkQuantumWorkbench(
         ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
+        onPostRegister();
     }
 
     public static void addRecipe(ItemStack[] input, ItemStack output) {
@@ -68,8 +69,7 @@ public class NetworkQuantumWorkbench extends SpecialSlimefunItem {
         addItemHandler(getBlockBreakHandler());
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
             @Override
             public void init() {

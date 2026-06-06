@@ -396,8 +396,7 @@ public class NetworkQuantumStorage extends SpecialSlimefunItem implements Distin
             String.format(Lang.getString("messages.completed-operation.quantum_storage.changed_custom_max_amount"), newMaxAmount));
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         addWikiPage(WIKI_PAGE);
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 

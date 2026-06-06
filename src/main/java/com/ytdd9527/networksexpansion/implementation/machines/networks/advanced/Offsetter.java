@@ -224,8 +224,7 @@ public class Offsetter extends SpecialSlimefunItem implements AdminDebuggable {
         });
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
             @Override
             public void init() {

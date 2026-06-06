@@ -256,8 +256,7 @@ public abstract class AdvancedDirectional extends NetworkDirectional {
         }
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

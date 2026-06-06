@@ -124,6 +124,8 @@ public abstract class AbstractGrid extends NetworkObject {
                 return Optional.empty();
             }
         });
+
+        onPostRegister();
     }
 
     @NotNull
@@ -476,8 +478,7 @@ public abstract class AbstractGrid extends NetworkObject {
             && StackUtils.itemsMatch(request, cursor);
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         getPreset();
     }
 

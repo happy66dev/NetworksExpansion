@@ -66,8 +66,7 @@ public abstract class AbstractManualCrafter extends SpecialSlimefunItem implemen
         }
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
             @Override
             public void init() {

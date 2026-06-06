@@ -41,10 +41,10 @@ public class NetworkCell extends NetworkObject {
         for (int slot : SLOTS) {
             this.getSlotsToDrop().add(slot);
         }
+        onPostRegister();
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

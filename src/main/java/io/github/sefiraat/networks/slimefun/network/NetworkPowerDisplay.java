@@ -53,6 +53,8 @@ public class NetworkPowerDisplay extends NetworkObject {
                 }
             }
         });
+
+        onPostRegister();
     }
 
     private static @NotNull ItemStack getChargeStack(long charge) {
@@ -79,8 +81,7 @@ public class NetworkPowerDisplay extends NetworkObject {
         }
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

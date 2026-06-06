@@ -517,8 +517,7 @@ public class CrafterManager extends NetworkObject {
         return list;
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         getPreset();
     }
 

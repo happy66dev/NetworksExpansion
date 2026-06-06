@@ -457,8 +457,7 @@ public abstract class AbstractGridNewStyle extends AbstractGrid implements Keybi
         return result;
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         getPreset();
     }
 

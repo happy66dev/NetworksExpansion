@@ -483,8 +483,7 @@ public class ItemFlowViewer extends NetworkObject {
         sendFeedback(blockMenu.getLocation(), FeedbackType.WORKING);
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         getPreset();
     }
 

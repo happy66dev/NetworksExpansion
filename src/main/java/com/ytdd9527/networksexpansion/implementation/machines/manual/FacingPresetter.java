@@ -87,8 +87,7 @@ public class FacingPresetter extends NetworkDirectional {
         return DOWN_SLOT;
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override

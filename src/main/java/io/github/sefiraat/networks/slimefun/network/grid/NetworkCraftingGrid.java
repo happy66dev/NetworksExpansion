@@ -67,11 +67,6 @@ public class NetworkCraftingGrid extends AbstractGrid {
         this.getSlotsToDrop().add(CRAFT_OUTPUT_SLOT);
     }
 
-    @Override
-    public void postRegister() {
-        getPreset();
-    }
-
     @NotNull
     @Override
     public BlockMenuPreset getPreset() {

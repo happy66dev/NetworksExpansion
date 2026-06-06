@@ -31,10 +31,10 @@ public class NetworkGreedyBlock extends NetworkObject {
         super(itemGroup, item, recipeType, recipe, NodeType.GREEDY_BLOCK);
         this.getSlotsToDrop().add(INPUT_SLOT);
         this.getSlotsToDrop().add(TEMPLATE_SLOT);
+        onPostRegister();
     }
 
-    @Override
-    public void postRegister() {
+    private void onPostRegister() {
         new BlockMenuPreset(this.getId(), this.getItemName()) {
 
             @Override
